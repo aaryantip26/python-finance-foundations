@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## Projects
 
 ### Week 1 — Compound Interest Calculator

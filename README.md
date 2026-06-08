@@ -15,4 +15,3 @@ Uses NumPy matrix operations to compute portfolio variance.
 - File I/O
 - NumPy
 - Git/GitHub
->>>>>>> 3381bcd9e043c8b6fc44656ca4af7dcfcefa712a

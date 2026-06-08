@@ -9,9 +9,9 @@ A simple Python program that calculates the future value of an investment using 
 
 ## Example
 
-Principal/Face Value: 1000
-Periodic Interest Rate (%): 5
-Number of periods: 3
+Principal/Face Value: 1000  
+Periodic Interest Rate (%): 5  
+Number of periods: 3  
 
 Future Value: 1157.63
 

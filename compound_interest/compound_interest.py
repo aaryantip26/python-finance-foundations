@@ -1,13 +1,37 @@
-#Project 1
-
 def compound_interest():
-    """Given the accurate periodic interest rate, this simple calculator will
-    return the Future Value of an interest-gaining investment/loan"""
+    """Calculates the future value of an investment using compound interest.
+
+Parameters
+----------
+None (reads from stdin)
+
+Formula: F = P * (1 + i/100) ** n"""
+    
     P = float(input("Principal/Face Value: "))
-    i = float(input("Periodic Interest Rate (%): "))
+    if P <= 0:
+        print("Error: principal must be positive.")
+        return
+        
+    r = float(input("Periodic Interest Rate (%): "))
+    if r <= -100:
+        print("Error: interest rate cannot be -100% or lower")
+        return
+        
     n = float(input("Number of periods: "))
-    F = P * ((1 + (i / 100)) ** n)
-    print(f"Future Value: {F:.2f}")
+    if n <= 0:
+        print("Error: periods must be positive.")
+        return
+    
+    return P * ((1 + (r / 100)) ** n)
 
 if __name__ == "__main__":
-    compound_interest()
+    result = compound_interest()
+    if result is not None:
+        print(f"Future Value: {result:.2f}")
+
+# Negative rates are permitted (e.g. negative-yield environments);
+# only rates <= -100% are mathematically invalid.
+# Known limitations / future improvements:
+# - No input validation for non-numeric entries (letters will crash the program)
+# - Could add support for continuous compounding (F = P * e^(rt))
+# - Could extend to annuity calculations

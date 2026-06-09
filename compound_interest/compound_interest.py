@@ -1,11 +1,5 @@
 def compound_interest():
-    """Calculates the future value of an investment using compound interest.
-
-Parameters
-----------
-None (reads from stdin)
-
-Formula: F = P * (1 + i/100) ** n"""
+    """Calculates the future value of an investment using compound interest."""
     
     P = float(input("Principal/Face Value: "))
     if P <= 0:

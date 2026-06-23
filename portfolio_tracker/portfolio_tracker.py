@@ -86,3 +86,7 @@ if __name__ == "__main__":
         print("Oops! File not found.")
     except ValueError as e:
         print(e)
+
+
+## Known limitations
+# - Assumes well-formed numeric data for Quantity and Price (invalid rows are skipped with a warning, not auto-corrected)

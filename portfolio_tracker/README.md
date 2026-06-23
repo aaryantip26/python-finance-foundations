@@ -4,8 +4,8 @@ A class-based CLI tool that loads portfolio holdings from a CSV file,
 calculates position weights, and exports a summary CSV with a total row.
 
 ## Usage
-python portfolio_tracker.py
-# then enter the CSV filename when prompted
+- "python portfolio_tracker.py" in the terminal
+- Enter the CSV filename when prompted.
 
 ## Input format
 CSV must contain these columns (any order): Name, Symbol, Quantity, Price
